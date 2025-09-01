@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "vercel-build": "pnpm install --no-frozen-lockfile && vite build",
     "preinstall": "cross-env SWC_FORCE_BUILD=1",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
+    
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
