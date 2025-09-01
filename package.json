@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+     "preinstall": "export SWC_FORCE_BUILD=1 || set SWC_FORCE_BUILD=1",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
