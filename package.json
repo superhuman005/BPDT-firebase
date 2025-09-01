@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-     "preinstall": "export SWC_FORCE_BUILD=1 || set SWC_FORCE_BUILD=1",
+    "preinstall": "cross-env SWC_FORCE_BUILD=1",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
@@ -81,6 +81,7 @@
     "@vercel/node": "^5.3.17",
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.20",
+    "cross-env": "^10.0.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
