@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { doc, getDoc, collection, query, where, getDocs } from "firebase/firestore";
-import { db } from "@/lib/firebase/firebase";
+import { db } from "@/lib/firebase";
 // import { Loader } from "@/components/shared/Loader"; // adjust thader component pah
 
 

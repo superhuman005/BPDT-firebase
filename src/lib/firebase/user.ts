@@ -1,5 +1,5 @@
 // user.ts
-import { auth, db } from "./firebase";
+import { auth, db } from "../firebase";
 import { createUserWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { collection, setDoc, doc } from "firebase/firestore";
 import { v4 as uuidv4 } from "uuid";

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { FileText, Download, Sparkles, ArrowLeft } from "lucide-react";
 import { usePlan } from "@/contexts/PlanContext";
 import { useAuth } from "@/contexts/AuthContext";
-import { auth, db } from "../lib/firebase/firebase";
+import { auth, db } from "../lib/firebase";
 import { doc, getDoc } from "firebase/firestore";
 
 export interface BusinessPlanData {

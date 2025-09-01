@@ -9,7 +9,7 @@ import {
   doc,
   getDoc,
 } from "firebase/firestore";
-import { auth, db } from "../lib/firebase/firebase";
+import { auth, db } from "../lib/firebase";
 import { sendIncompleteReminders } from "@/lib/firebase/functions";
 import { useToast } from "@/hooks/use-toast";
 import {

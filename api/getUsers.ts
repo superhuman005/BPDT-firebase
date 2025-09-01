@@ -1,9 +1,11 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
-import { db } from "../lib/firebase"; // this should be firebase-admin initialized
+import { db } from "../src/lib/firebase";
+import { collection, getDocs } from "firebase/firestore";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
-    const snapshot = await db.collection("users").get(); // <-- admin style
+    const usersCol = collection(db, "users");
+    const snapshot = await getDocs(usersCol);
     const users = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
     res.status(200).json(users);

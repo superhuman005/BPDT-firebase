@@ -1,5 +1,5 @@
 // checkUser.ts
-import { db } from "./firebase"; // ✅ Correct relative path
+import { db } from "../firebase"; // ✅ Correct relative path
 import { doc, getDoc } from "firebase/firestore"; 
 
 

@@ -10,7 +10,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator } from "@/components/ui/dropdown-menu";
 import { Users, UserPlus, UsersIcon, MoreHorizontal, Shield, Edit, Activity, Trash2, Loader2 } from "lucide-react";
-import { auth, db } from "../lib/firebase/firebase";
+import { auth, db } from "../lib/firebase";
 import { useToast } from "@/hooks/use-toast";
 import { useAdmin } from "@/hooks/useAdmin";
 

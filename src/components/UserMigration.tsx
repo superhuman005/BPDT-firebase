@@ -7,7 +7,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Loader2, Users, Upload, AlertTriangle } from "lucide-react";
-import { auth, db } from "../lib/firebase/firebase";
+import { auth, db } from "../lib/firebase";
 import { useToast } from "@/hooks/use-toast";
 import { collection, getDocs, doc, getDoc } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";

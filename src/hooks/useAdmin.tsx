@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../contexts/AuthContext";
-import { db } from "../lib/firebase/firebase";
+import { db } from "../lib/firebase";
 import { useToast } from "./use-toast";
 import {
   collection,

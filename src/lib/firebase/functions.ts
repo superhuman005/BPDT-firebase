@@ -1,5 +1,5 @@
 import { getFunctions, httpsCallable } from "firebase/functions";
-import { app } from "./firebase";
+import { app } from "../firebase";
 
 
 

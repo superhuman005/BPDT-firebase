@@ -6,7 +6,7 @@ import {
   ReactNode,
 } from "react";
 import { BusinessPlanData } from "@/pages/Index";
-import { auth, db } from "../lib/firebase/firebase";
+import { auth, db } from "../lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/hooks/use-toast";
 import {

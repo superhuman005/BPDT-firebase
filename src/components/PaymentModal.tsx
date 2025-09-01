@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Check, CreditCard, Shield, Zap } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { httpsCallable, getFunctions } from "firebase/functions";
-import { app } from "../lib/firebase/firebase"; // Adjust path if needed
+import { app } from "../lib/firebase"; // Adjust path if needed
 
 interface PaymentModalProps {
   isOpen: boolean;
