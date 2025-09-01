@@ -6,7 +6,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "How long does it take to generate a business plan?",
-      answer: "Our AI-powered tool can generate a comprehensive business plan in just a few minutes after you complete the form."
+      answer: "Our AI-powered tool can generate a comprehensive business plan in just a few minutes after you complete the form.."
     },
     {
       question: "Can I edit my business plan after it's generated?",
