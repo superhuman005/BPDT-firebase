@@ -1,7 +1,10 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+
+// Fix for TypeScript: tell it to ignore lovable-tagger types
+// Create a src/global.d.ts file with: declare module "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -11,6 +14,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
+    // Only enable componentTagger in development mode
     mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
@@ -19,6 +23,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "dist", // ← this tells Vite where to put the production build
+    outDir: "dist", // production build folder
   },
 }));
